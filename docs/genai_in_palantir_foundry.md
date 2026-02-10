@@ -16,7 +16,7 @@ For Architects and CTOs, the decision usually falls into two camps:
 
 - **Platform Approach**: Unifies the Data Layer, Logic Layer, and Application Layer. The Ontology serves as both the semantic graph and the vector store, on top of which we can create operational applications and LLM orchestrations.
 
-![Hyperscalers vs Palantir](images/hyperscaler_vs_palantir.png?raw=true)
+![Hyperscalers vs Palantir](assets/hyperscaler_vs_palantir.png?raw=true)
 
 The primitive approach maximizes flexibility and is attractive to teams that want fine-grained control over every component. The trade-off is a significant "Integration Tax" in Time-to-Market and ongoing maintenance. Let's see why, in many enterprise scenarios, Foundry ends up delivering faster and with less operational overhead.
 
@@ -141,7 +141,7 @@ Say you have the following Ontology objects already created and powering up exis
 Ontology have 4 objects - **Incident**, **Asset**, **Work Order**, **Maintenance Event**
 Incidents are linked to Assets and Work Orders and Assets ar linked to Maintenance events
 There's also an action associated with Work Order to create a new work order.
-![ontology](images/genai_ontology.png?raw=True)
+![ontology](assets/genai_ontology.png?raw=True)
 
 In Agent Studio, we can create agent that leverages the ontology objects and links bind the actions as tools and configure the agent via prompts and settings rather than raw JSON schemas.
 
@@ -153,22 +153,22 @@ Finally, use the Create Work Order tool to draft a resolution.
 If Incident is already closed don't suggest any resolution  or create work order.
 ```
 
-![agent-studio](images/genai_agent_studio.png?raw=True)
+![agent-studio](assets/genai_agent_studio.png?raw=True)
 
 Setup the tools for LLM to use
 1. Action - this will allow LLM to trigger the create a work order action
 2. Query tool - this will allow LLM to traverse the ontology links to find similar historical incidents and work orders.
 
-![genai-tools](images/genai_tools.png?raw=True)
+![genai-tools](assets/genai_tools.png?raw=True)
 
 Set up AIP Eval, to test the agent on historical incidents, 
 Use keyword checker to check if LLM is identifying correct keywords and Use LLM-as-a-judge to score quality of generated summary and resolution text.
-![genai-evals](images/genai_evals.png?raw=True)
+![genai-evals](assets/genai_evals.png?raw=True)
 
 Now using Workshop, you can build an app that displays Incident list and detail view bound directly to Ontology objects. Whenever a row is clicked on table it open up a overlay, where the agent panel uses the selected Incident as context and summarizes and proposes a work order draft action and ask user for approval for better governance.
 
 The user can additionally give feedback about the reply using the thumbs up/down button.
-![genai-workshop-app](images/genai_workshop_app.png?raw=True)
+![genai-workshop-app](assets/genai_workshop_app.png?raw=True)
 
 All of this is done within a single platform, with fewer separate services to integrate or writing any complex to code. This reduces end-to-end delivery time to a few weeks or less, with a more straightforward security and governance story.
 
