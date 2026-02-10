@@ -1,3 +1,7 @@
+---
+layout: default
+title: Accelerating GenAI Development with Palantir Foundry
+---
 
 # Accelerating GenAI Development with Palantir Foundry
 
