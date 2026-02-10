@@ -4,4 +4,4 @@
 > Apart for playing with data, I also like to tinker with other things.
 
 ### Write-ups
-1. [Accelerating GenAI Development with Palantir Foundry](genai_in_palantir_foundry.md)
+1. [Accelerating GenAI Development with Palantir Foundry](/rocket-ship/GenAI_in_Palantir_Foundry.md/)
