@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Accelerating GenAI Development with Palantir Foundry
+description: Hyperscalers make you assemble GenAI from parts; Foundry lets you deploy it as an integrated machine.
 ---
-
-# Accelerating GenAI Development with Palantir Foundry
 
 
 ## Introduction

@@ -1,11 +1,11 @@
 # Site Settings
-title: Personal Blogs
-description: Technical documentations for various things.
+title: Harsh Gautam
+description: Documenting various technologies
 theme: jekyll-theme-cayman # Popular options: minimal, tactile, slate, hacker
 
 # Social Links (Visible in some themes)
 github_username: harsh-gautam
-show_downloads: true
+show_downloads: false
 
 # Build Settings
 remote_theme: pages-themes/cayman@v0.2.0
